@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		a.class1:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a.class1:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a.class1:visited {
+            color: purple;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a.class1:active {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .collapsible {
+            background-color: #f1f1f1;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+            width: 30%;
+            border: none;
+            text-align: center;
+            outline: none;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #dcdcdc;
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: white;
+        }
+
+        body {
+			overflow-y:scroll;
+		}
+	</style>
+
+    <head>
+        <link rel="icon" type="image/png" href="https://klic69.github.io/6523959q7q1958629/favicon.ico"/>
+    </head>
+
+	<body align="center">
+        <title>Fantasy Sports Schedule (nba)</title>
+        <h1>Fantasy Sports Schedule (nba)</h1>
+			<button class="collapsible"><h2>Weeks sports.ru</h2></button>
+            <div class="content">
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Overall.html" style="text-decoration:none;">Overall</a></h3>
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Matchup 17.html" style="text-decoration:none;">Matchup 17 (12/02/2024 - 19/02/2024)</a></h3>
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Matchup 18.html" style="text-decoration:none;">Matchup 18 (19/02/2024 - 26/02/2024)</a></h3>
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Matchup 19.html" style="text-decoration:none;">Matchup 19 (26/02/2024 - 04/03/2024)</a></h3>
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Matchup 20.html" style="text-decoration:none;">Matchup 20 (04/03/2024 - 11/03/2024)</a></h3>
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Matchup 21.html" style="text-decoration:none;">Matchup 21 (11/03/2024 - 18/03/2024)</a></h3>
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Matchup 22.html" style="text-decoration:none;">Matchup 22 (18/03/2024 - 25/03/2024)</a></h3>
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Matchup 23.html" style="text-decoration:none;">Matchup 23 (25/03/2024 - 01/04/2024)</a></h3>
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Matchup 24.html" style="text-decoration:none;">Matchup 24 (01/04/2024 - 08/04/2024)</a></h3>
+            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629/matchups/Weeks sports.ru (nba)/Matchup 25.html" style="text-decoration:none;">Matchup 25 (08/04/2024 - 15/04/2024)</a></h3>
+            </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = (content.scrollHeight + 100000) + "px";
+                }
+              });
+            }
+        </script>
+	</body>
+</html>
