@@ -6,13 +6,13 @@
             background-color: transparent;
             text-decoration: none;
         }
-        
+
         a.class1:hover {
             color: red;
             background-color: transparent;
             text-decoration: none;
         }
-        
+
         a.class1:visited {
             color: purple;
             background-color: transparent;
@@ -34,6 +34,8 @@
             border: none;
             text-align: center;
             outline: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         .active, .collapsible:hover {
@@ -44,56 +46,69 @@
             padding: 0 18px;
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.2s ease-out;
+            transition: max-height 0.3s ease-out;
             background-color: white;
+            gap: 10px;
+        }
+
+        .content.expanded {
+            -webkit-overflow-scrolling: touch;
+            padding: 0 18px;
+            max-height: none;
+            overflow-y: visible;
+            overflow-x: auto;
+            transition: max-height 0.3s ease-in;
+            background-color: white;
+            max-width: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         body {
-			overflow-y:scroll;
+			overflow-y: scroll;
+            overflow-x: hidden;
 		}
 	</style>
 
     <head>
+        <meta charset="UTF-8">
         <link rel="icon" type="image/png" href="https://klicogogo.github.io/res/favicon.ico"/>
     </head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4G5VRJNC6"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-Y4G5VRJNC6');
+        gtag('config', 'G-Y4G5VRJNC6');
     </script>
 
 	<body align="center">
         <title>Everlasting Summer League (basketball)</title>
         <h1><a href="https://klicogogo.github.io/Fantasy-Fun-Stuff/homepage.html" style="text-decoration:none;">Fantasy Fun Stuff (active stats)</a></h1>
         <h1><a href="https://fantasy.espn.com/basketball/league?leagueId=1033879963" style="text-decoration:none;" class="class1">Everlasting Summer League (basketball)</a></h1>
-			<button class="collapsible"><h2>2025-26</h2></button>
-            <div class="content">
-            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_6.html" style="text-decoration:none;">Matchup 6</a></h3>
-            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_5.html" style="text-decoration:none;">Matchup 5</a></h3>
-            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_4.html" style="text-decoration:none;">Matchup 4</a></h3>
-            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_3.html" style="text-decoration:none;">Matchup 3</a></h3>
-            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_2.html" style="text-decoration:none;">Matchup 2</a></h3>
-            <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_1.html" style="text-decoration:none;">Matchup 1</a></h3>
-            </div>
+                <button class="collapsible"><h2>2025-26</h2></button>
+                <div class="content">
+                    <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_7.html" style="text-decoration:none;">Matchup 7</a></h3>
+                    <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_6.html" style="text-decoration:none;">Matchup 6</a></h3>
+                    <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_5.html" style="text-decoration:none;">Matchup 5</a></h3>
+                    <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_4.html" style="text-decoration:none;">Matchup 4</a></h3>
+                    <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_3.html" style="text-decoration:none;">Matchup 3</a></h3>
+                    <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_2.html" style="text-decoration:none;">Matchup 2</a></h3>
+                    <h3 style="margin:0"><a href="https://klic69.github.io/6523959q7q1958629\active_stats\basketball\1033879963\2025-26/matchup_1.html" style="text-decoration:none;">Matchup 1</a></h3>
+                </div>
 
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
-            
+
             for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                  content.style.maxHeight = null;
-                } else {
-                  content.style.maxHeight = (content.scrollHeight + 100000) + "px";
-                }
-              });
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    content.classList.toggle("expanded");
+                });
             }
         </script>
 	</body>
